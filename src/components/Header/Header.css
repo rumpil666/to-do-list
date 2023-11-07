@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: rgb(127, 161, 192);
+  width: 1400px;
+  height: fit-content;
+  margin: 0 auto;
+  border-radius: 13px 13px 0 0;
+}
+
+.header__title {
+  margin: 10px auto 20px;
+}

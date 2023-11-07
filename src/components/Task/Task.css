@@ -1,0 +1,114 @@
+.task {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+position: relative;
+border-bottom: 1px solid black;
+align-items: center;
+min-height: 76px;
+background-color: white;
+width: 100%;
+max-width: 960px;
+margin: 0 auto;
+}
+
+.task:last-child {
+  border: none;
+}
+
+.task__title {
+  margin: 0;
+  color: rgb(103, 125, 158);
+  width: 100%;
+  max-width: 300px;
+}
+
+.task__subtitle {
+  margin: 0;
+  word-wrap: break-word;
+  color: rgb(103, 125, 158);
+  width: 100%;
+  max-width: 450px;
+}
+
+.task__buttons {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  height: fit-content;
+}
+
+.task__edit {
+  position: absolute;
+  top: center;
+  right: 23px;
+  border: 0;
+  margin: 0 5px 0 0;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+  background-image: url(../../images/pero.svg);
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.task__edit:hover {
+  opacity: 0.6;
+}
+
+.task__edit--hide {
+  display: none;
+}
+
+.task__date {
+  margin: 0;
+  color: rgb(103, 125, 158);
+  width: 100%;
+  max-width: 100px;
+}
+
+.task__complited {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+  background-image: url(../../images/save-button.svg);
+  width: 21px;
+  height: 21px;
+  object-fit: contain;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.task__complited--complit {
+  background-image: url(../../images/save-button-active.svg);
+}
+
+.task__complited:hover {
+  background-image: url(../../images/save-button-active.svg);
+}
+
+
+.task__delete {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+  background-image: url(../../images/Delete.svg);
+  width: 18px;
+  height: 19px;
+  object-fit: contain;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.task__delete:hover {
+  opacity: 0.6;
+}
